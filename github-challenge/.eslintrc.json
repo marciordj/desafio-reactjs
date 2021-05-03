@@ -38,6 +38,15 @@
       "react-hooks/exhaustive-deps": "warn",
       "react/prop-types": "off", // Por causa de usarmos o typescript não precisamos dos prop-types
       "react/react-in-jsx-scope": "off", // Por causa do NEXTJS nao precisamos importar o React o tempo inteiro
-      "@typescript-eslint/explicit-module-boundary-types": "off" // Importante: se o tipo não for definido de forma implícita (3 = number), é importante definir forçadamente
+      "@typescript-eslint/explicit-module-boundary-types": "off", // Importante: se o tipo não for definido de forma implícita (3 = number), é importante definir forçadamente
+      "max-len": [
+        "warn",
+        120,
+        2,
+        {
+          "ignorePattern": "^(import|export)",
+          "ignoreUrls": true
+        }
+      ]
     }
   }
